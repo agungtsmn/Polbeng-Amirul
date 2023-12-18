@@ -1,0 +1,97 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron{
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg.jpg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-form{
+  width: 90%;
+  text-align: center;
+}
+
+.tagline{
+  color: white;
+}
+
+.subline{
+  color: rgba(255, 255, 255, 0.71);
+  margin-bottom: 40px;
+}
+
+.register-text{
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.form-control{
+  border-radius: 0;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.597) ;
+  padding: 10px 0;
+  color: white;
+}
+
+.form-control::placeholder{
+  color: rgba(255, 255, 255, 0.704);
+}
+
+.form-control:focus{
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid white ;
+  color: white;
+}
+
+.is-invalid:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.invalid-feedback{
+  color: rgb(255, 83, 83);
+  margin-top: -5px;
+  text-align: start;
+}
+
+.btn-login{
+  background-color: var(--mainColor);
+  color: #464648;
+  text-decoration: none;
+  padding: 7px 20px 7px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  width: 100%;
+  margin-top: 50px;
+  transition: ease-in 0.1s;
+}
+
+@media (min-width: 768px) {
+  .box-form{
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .jumbotron{
+    margin-top: -70px;
+  }
+
+  .box-form{
+    width: 350px;
+  }
+
+}

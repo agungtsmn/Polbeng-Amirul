@@ -1,0 +1,52 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron{
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg.jpg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline{
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.subline{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.btn-order{
+  background-color: var(--mainColor);
+  color: #464648;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 20px 7px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+
+  .jumbotron{
+    margin-top: -70px;
+  }
+
+  .headline{
+    font-size: 50px;
+  }
+
+  .subline{
+    width: 40%;
+  }
+
+}
