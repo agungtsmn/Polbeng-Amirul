@@ -1,6 +1,6 @@
 <!-- ########## START: LEFT PANEL ########## -->
 <div class="br-logo"><a href=""><span>[</span>Admin Panel<span>]</span></a></div>
-<div class="br-sideleft overflow-y-auto">
+<div class="br-sideleft overflow-y-auto" style="background-color: rgb(18, 25, 32)">
   <label class="sidebar-label pd-x-15 mg-t-20">Navigation</label>
   <div class="br-sideleft-menu">
 

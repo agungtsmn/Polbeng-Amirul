@@ -34,11 +34,14 @@ Route::middleware(['auth'])->group(function() {
   Route::get('/logout', [MainController::class, 'logout']);
 
   Route::get('/service', [ServiceController::class, 'index']);
+  Route::get('/booking/page/{category}', [ServiceController::class, 'bookingPage']);
+  Route::post('/booking', [ServiceController::class, 'booking']);
+  Route::get('/myorder', [ServiceController::class, 'myorder']);
 
 });
 
 
-
+Route::get('/dashboard', [MainController::class, 'dashboard']);
 Route::resource('/manage/user', UserController::class)->except(['create', 'show', 'edit']);
 Route::resource('/manage/category', CategoryController::class)->except(['create', 'show', 'edit']);
 Route::resource('/manage/booking', BookingController::class)->except(['create', 'show', 'edit']);

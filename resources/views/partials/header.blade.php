@@ -11,7 +11,7 @@
       <div class="dropdown">
         <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
           {{-- <span class="logged-name hidden-md-down">{{ Auth::user()->nama }}</span> --}}
-          <span class="logged-name hidden-md-down">Amirul</span>
+          <span class="logged-name hidden-md-down">{{ Auth::user()->name }}</span>
           <img src="http://via.placeholder.com/64x64" class="wd-32 rounded-circle" alt="">
           <span class="square-10 bg-success"></span>
         </a>

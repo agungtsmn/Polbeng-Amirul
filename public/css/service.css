@@ -6,10 +6,6 @@ body{
   background-attachment: fixed;
 }
 
-.box-content{
-  
-}
-
 .tagline{
   color: white;
   text-align: center;
@@ -53,6 +49,10 @@ body{
 .harga{
   font-size: 30px;
   color: var(--mainColor);
+}
+
+.date{
+  color: #ffffff91;
 }
 
 @media (min-width: 768px) {

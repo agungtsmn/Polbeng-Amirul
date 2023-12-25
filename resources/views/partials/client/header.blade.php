@@ -8,7 +8,7 @@
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/">Home</a>
         <a class="nav-link" href="/service">Service</a>
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/myorder">My Order</a>
         {{-- <a class="btn-contact" target="_blank" href="https://api.whatsapp.com/send?phone=6289669665015"><i class="bi bi-whatsapp"></i></a> --}}
         @if (!Auth::user())  
           <a class="btn-nav-login" href="/login/page">Login</a>

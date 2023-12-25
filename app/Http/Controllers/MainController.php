@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
+use App\Models\Category;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -31,6 +33,7 @@ class MainController extends Controller
       $request->session()->regenerate();
 
       $getRole = User::where('username', $request->username)->first();
+      // dd($getRole);
       if ($getRole->role == 'Admin') {
         return redirect()->intended('/dashboard');
       } else {
@@ -70,5 +73,17 @@ class MainController extends Controller
     $request->session()->regenerateToken();
 
     return redirect('/');
+  }
+
+  public function dashboard()
+  { 
+    $userCount = User::count();
+    $categoryCount = Category::count();
+    $bookingCount = Booking::count();
+    return view('content.admin.dashboard', [
+      'userCount' => $userCount,
+      'categoryCount' => $categoryCount,
+      'bookingCount' => $bookingCount,
+    ]);
   }
 }

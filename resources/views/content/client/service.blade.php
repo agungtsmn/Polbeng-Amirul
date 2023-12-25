@@ -12,7 +12,7 @@
       <div class="row">
         @foreach ($categories as $category)
           <div class="col-md-6 col-lg-4 mb-4">
-            <a href="" class="text-decoration-none">
+            <a href="/booking/page/{{ $category->id }}" class="text-decoration-none">
               <div class="box-service">
                 <img class="img-service" src="{{ Storage::url($category->category_img) }}" alt="">
                 <b class="type">{{ $category->type }}</b><br>
