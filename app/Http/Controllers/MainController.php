@@ -57,7 +57,7 @@ class MainController extends Controller
       'name' => 'required|alpha',
       'username' => 'required|unique:users',
       'password' => 'required|min:8',
-      'phone_number' => 'required|in:62',
+      'phone_number' => 'required',
       'role' => 'required',
     ]);
 
